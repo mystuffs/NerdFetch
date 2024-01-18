@@ -15,7 +15,7 @@ case $ostype in
 	*"Linux"*)
 		if [ $distrotype = android ]; then
 			host="$(hostname)"
-			USER=${USER:-$(id -un || printf %s "${HOME/*\/}")}
+			USER="$(whoami)"
 			os="Android $(getprop ro.build.version.release)"
 			osi="󰀲"
 		else
