@@ -25,6 +25,7 @@ case $ostype in
 				os="$(brl version)"
 			else
 				os="${PRETTY_NAME}"
+
 				case $(echo $ID | sed 's/ .*//') in
 					debian) osi="";;
 					arch) osi="󰣇";;
